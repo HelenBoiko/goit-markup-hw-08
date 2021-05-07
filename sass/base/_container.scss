@@ -1,0 +1,28 @@
+
+.container {
+  width: 1200px;
+  margin-left:  auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+.container__title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-color);
+
+}
+
+.container-main {
+	width: 1200px;
+	padding: 0 15px;
+	margin-left: auto;
+	margin-right: auto
+}
+

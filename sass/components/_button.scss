@@ -1,0 +1,36 @@
+button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+  cursor: pointer;
+  padding: 6px 22px;
+  border: none;
+  border-radius: 6px;
+  transition: bacgraun-color 250ms var(--animation);
+
+  &:hover,
+  &:focus {
+  color: var(--button-color); 
+  box-shadow: 0 10px 10px -5px
+  rgba(0,0,0,0.3);
+  background-color: var(--accent-link-color);
+  border-radius: 4px;
+  }
+
+  &:active {
+  color: var(--button-color);
+  background-color: var(--accent-link-color);
+  
+  }
+
+}
+
+
+
+

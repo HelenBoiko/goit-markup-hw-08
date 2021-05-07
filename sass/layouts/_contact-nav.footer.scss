@@ -1,0 +1,15 @@
+.contact-nav__link + .contact-nav__link {
+	margin-top: 9px;
+}
+
+.contact-nav__mail,
+.contact-nav__tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration-line: none;
+  color: var(--main-text-color);
+  transition: collor 250ms var(--animation);
+}
+

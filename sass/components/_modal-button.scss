@@ -1,0 +1,49 @@
+.close-modal {
+  display: flex;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: var(--bg-color);
+
+  color: var(--logo-header-color);
+  font: inherit;
+  transition: fill 250ms var(--animation);
+
+  &:hover,
+  &:focus {
+  fill: var(--accent-link-color);
+  border: 1px solid var(--accent-link-color);
+  }
+
+
+}
+
+
+.close-modal__icon {
+  width: 11px;
+  height: 11px;
+}
+
+
+.modal-button {
+  display: block;
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  color: var(--bg-color);
+  background-color: var(--accent-link-color);
+  
+}

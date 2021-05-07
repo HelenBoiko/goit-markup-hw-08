@@ -1,0 +1,28 @@
+.section__button {
+  display: block;
+  border: 1px solid transparent;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  color: var(--bg-color);
+  background: var(--accent-link-color);
+}
+
+.sektion__button [type="button"] {
+  font-weight: 700;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-decoration-line: none;
+  color: var(--title-color);
+  background-color: var(--button-color);
+
+}
