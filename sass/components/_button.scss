@@ -14,6 +14,10 @@ button {
   border-radius: 6px;
   transition: bacgraun-color 250ms var(--animation);
 
+  
+}
+
+.button {
   &:hover,
   &:focus {
   color: var(--button-color); 
