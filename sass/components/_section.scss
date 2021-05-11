@@ -18,3 +18,10 @@
   background-color: var(--bg-color-section);
   color: var(--bg-color);
 }
+
+
+  @media screen and (min-widht: 480px){
+    .section {
+    max-width: 480px;
+  }
+}
