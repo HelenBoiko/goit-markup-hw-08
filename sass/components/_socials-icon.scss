@@ -1,8 +1,16 @@
 .icon-social {
   display: flex;
-  padding-left: 0;
-  margin: 0;
+  //padding-left: 0;
+  //margin: 0;
   list-style: none;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  
 }
 
 .icon-social__item + .icon-social__item {

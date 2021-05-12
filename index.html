@@ -15,14 +15,14 @@
 </head>
 
 <body>
-    <!--Шапка сайта--
+    <!--Шапка сайта-->
   <header class="page-header">
     <div class="container header">
     <nav class="list">
       <a class="logo" href="./index.html">Web<span class="logo-studio-black">Studio</span></a>
-
-      <!-- List-nav--
-
+        
+      <!-- List-nav-->
+        <div class="">
         <ul class="list-nav flex">
           <li class="list-nav__item"><a href="./portfolio.html" class="list-nav__current list-nav__link">Студия</a></li>
           <li class="list-nav__item"><a href="./portfolio.html" class="list-nav__link">Портфолио</a></li>
@@ -30,7 +30,7 @@
         </ul>
       </nav>
 
-      <!-- Contact-nav--
+      <!-- Contact-nav-->
 
         <ul class="contact-nav">
           <li class="contact-nav__item">
@@ -51,11 +51,23 @@
           </a>
           </li>
         </ul>
+        <button type="button" class="mobile-btn is-open" aria-expanded="false"
+        aria-controls="mobile-menu" 
+          data-menu-button>
+          <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+            <use class="mobile-btn__icon-close" href="./imeges/sprite.mobile.svg#icon-close_40"></use>
+            <use class="mobile-btn__icon-menu" href="./imeges/sprite.mobile.svg#icon-menu_40"></use>
+        
+          </svg>
+        </button>
+        <div class="mobile-menu" id="mobile-menu" data-menu>
+          Меню
+        </div>
     </div>
   </header>
   
   <main>
-      <!-- Hero Первая секция. Эффективные решения--
+      <!-- Hero Первая секция. Эффективные решения-->
       
     <section class="section">
       <div class="container">
@@ -347,7 +359,7 @@
     </section>
     </main>
 
-    <!--Footer  Футер адресс--
+    <!--Footer  Футер адресс-->
 
     <footer class="footer-container">
       <div class="container footer-list">
@@ -491,7 +503,9 @@
          </form>
       </div>
     </div>
+    <script src="./JS/menu.js"></script>
     <script src="./JS/modal.js"></script>
+    
 </body>
 
 </html>
