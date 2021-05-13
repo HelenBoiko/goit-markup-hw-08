@@ -15,6 +15,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  outline: 2px solid red;
 }
 
 h1,
@@ -46,18 +47,17 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding: 0 15px;
 }
 
 @media screen and (min-width: 480px) {
   .container {
-    min-width: 480px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    max-width: 768px;
   }
 }
 
@@ -545,7 +545,6 @@ button {
   left: 0;
   width: 100%;
   padding: 40px;
-  background-color: yellow;
   height: 200px;
 }
 
@@ -681,44 +680,42 @@ button {
   .main-list {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
-    margin-bottom: -30px;
   }
 }
 
 .main-list__item {
   height: 120px;
   background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: blue;
+  background-color: #F5F4FA;
 }
 
 @media screen and (min-width: 480px) {
   .main-list__item {
     width: 100%;
-    margin: 15px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .main-list__item {
-    width: calc((100%-2*30px)/2);
-    margin: 15px;
+    flex-basis: calc((100%-30px)/2);
+    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .main-list__item {
-    width: calc((100%-4*30px)/4);
-    margin: 15x;
+    flex-basis: calc((100%-3*30px)/4);
+    margin: 15px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .main-list__item:not(:last-child) {
-    margin-bottom: 30px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main-list__item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .main-list__item:last-child(-n+2) {
+    margin-bottom: 0;
   }
 }
 
@@ -745,6 +742,13 @@ button {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-color);
+}
+
+@media screen and (max-width: 767.98px) {
+  .main-list__title {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .main-list__text {
@@ -808,12 +812,21 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
-  background-color: chartreuse;
 }
 
 @media screen and (min-width: 480px) {
   .main-section {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 60px 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-section {
+    max-width: 768px;
+    margin: 0;
   }
 }
 
@@ -824,7 +837,7 @@ button {
 }
 
 .section-command {
-  background-color: chartreuse;
+  background-color: var(--button-color);
 }
 
 @media screen and (min-width: 480px) and (max-width: 1199px) {
@@ -906,10 +919,6 @@ button {
   color: var(--main-text-color);
 }
 
-.section-clients {
-  background-color: aqua;
-}
-
 @media screen and (max-width: 768px) {
   .section-clients {
     padding-top: 60px;
@@ -931,11 +940,7 @@ button {
   list-style: none;
 }
 
-.regular-clients__item {
-  margin-right: 30px;
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 480px) {
   .regular-clients__item {
     width: calc((100%-2*30px)/2);
     margin: 15px;
