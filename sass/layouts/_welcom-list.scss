@@ -1,6 +1,10 @@
 .welcom-list {
-  display: block;
-  width: 206px;
+  
+
+  @media screen and (min-widht: 1200px) {
+    display: block;
+    width: 206px;
+  }
   
 }
 

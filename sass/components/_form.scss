@@ -11,8 +11,12 @@
 }
 
 .mail-form {
+
+  @media screen and (min-widht: 1200px) {
+
   display: flex;
   width: 570px;
+  }
 }
 
 .mail-form__email {
