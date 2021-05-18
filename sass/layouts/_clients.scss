@@ -1,7 +1,9 @@
 .section-clients {
 
   @media screen and (min-widht: 480px) {
-    flex-basis: 100%;
+  
+    flex-basis: calc((100%-30px*2)/2);
+    margin-right: 30px;
     
     padding-top: 60px;
     padding-bottom: 60px;
@@ -9,8 +11,6 @@
 
 
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100%-30px)/2);
-    margin-right: 30px;
     
   }
 

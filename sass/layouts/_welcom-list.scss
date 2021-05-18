@@ -1,9 +1,10 @@
 .welcom-list {
-  
+  margin-bottom: 60px;
 
   @media screen and (min-widht: 1200px) {
     display: block;
     width: 206px;
+    
   }
   
 }
@@ -14,4 +15,5 @@
   letter-spacing: 0.03em;
   margin-bottom: 20px;
   color: var(--bg-color);
+  text-align: center;
 }

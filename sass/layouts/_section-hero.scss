@@ -1,21 +1,23 @@
 .section__hero {
-  
-  
+  max-width: 1600px;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
 
   @media screen and (min-widht: 480px) {
-    font-size: 26px;
-    line-height: 1.61;
+  
+    
   }
 
   @media screen and (min-widht: 1200px) {
     display: inline-block;
-  width: 696px;
-  margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+    width: 696px;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 

@@ -24,6 +24,9 @@
 .addres-footer {
   width: 231px;
   display: block;
+  display: inline-flex;
+  flex-direction: column;
+
 }
 
 .address-footer__contact  {
@@ -31,10 +34,12 @@
   line-height: 1.71;
   font-style: normal;
   color: var(--bg-color);
+  margin-bottom: 60px;
 }
 
 .address-footer__nav {
 	margin-bottom: 9px;
+  text-align: center;
 }
 
 .footer-list .contact-nav {
@@ -44,6 +49,7 @@
   margin: 0;
   list-style: none;
   color: var(--bg-adress-color);
+  text-align: center;
 }
 
 .mail-form__button {
@@ -62,6 +68,8 @@
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mail-form__button::after {

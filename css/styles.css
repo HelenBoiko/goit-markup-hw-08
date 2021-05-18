@@ -15,7 +15,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  outline: 2px solid red;
 }
 
 h1,
@@ -35,6 +34,12 @@ ul {
   list-style: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -45,8 +50,10 @@ body {
 }
 
 .container {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 15px;
 }
 
 @media screen and (min-width: 480px) {
@@ -63,7 +70,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .container {
-    min-width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -161,6 +168,8 @@ button {
   display: block;
   width: 145px;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo-studio-white {
@@ -274,7 +283,6 @@ button {
 }
 
 .section {
-  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -289,6 +297,12 @@ button {
 @media screen and (min-widht: 480px) {
   .section {
     width: 480px;
+  }
+}
+
+@media screen and (min-widht: 768px) {
+  .section {
+    width: 768px;
   }
 }
 
@@ -307,6 +321,7 @@ button {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   margin-bottom: 20px;
   color: #FFFFFF;
 }
@@ -319,9 +334,10 @@ button {
 }
 
 .mail-form__email {
-  width: 358px;
+  width: 100%;
   padding-left: 16px;
   margin-right: 12px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -641,15 +657,12 @@ button {
 }
 
 .section__hero {
+  max-width: 1600px;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
-
-@media screen and (min-widht: 480px) {
-  .section__hero {
-    font-size: 26px;
-    line-height: 1.61;
-  }
+  margin-bottom: 30px;
 }
 
 @media screen and (min-widht: 1200px) {
@@ -839,7 +852,8 @@ button {
     max-width: 480px;
     margin-left: auto;
     margin-right: auto;
-    padding: 60px 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -889,8 +903,6 @@ button {
 }
 
 .command__link {
-  margin-left: 15px;
-  margin-right: 15px;
   margin-bottom: 30px;
   border-radius: 4px;
   box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
@@ -936,16 +948,10 @@ button {
 
 @media screen and (min-widht: 480px) {
   .section-clients {
-    flex-basis: 100%;
+    flex-basis: calc((100%-30px*2)/2);
+    margin-right: 30px;
     padding-top: 60px;
     padding-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .section-clients {
-    flex-basis: calc((100%-30px)/2);
-    margin-right: 30px;
   }
 }
 
@@ -1019,6 +1025,8 @@ button {
 .addres-footer {
   width: 231px;
   display: block;
+  display: inline-flex;
+  flex-direction: column;
 }
 
 .address-footer__contact {
@@ -1026,10 +1034,12 @@ button {
   line-height: 1.71;
   font-style: normal;
   color: var(--bg-color);
+  margin-bottom: 60px;
 }
 
 .address-footer__nav {
   margin-bottom: 9px;
+  text-align: center;
 }
 
 .footer-list .contact-nav {
@@ -1039,6 +1049,7 @@ button {
   margin: 0;
   list-style: none;
   color: var(--bg-adress-color);
+  text-align: center;
 }
 
 .mail-form__button {
@@ -1054,6 +1065,8 @@ button {
   background: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mail-form__button::after {
@@ -1081,6 +1094,10 @@ button {
   transition: collor 250ms var(--animation);
 }
 
+.welcom-list {
+  margin-bottom: 60px;
+}
+
 @media screen and (min-widht: 1200px) {
   .welcom-list {
     display: block;
@@ -1094,6 +1111,7 @@ button {
   letter-spacing: 0.03em;
   margin-bottom: 20px;
   color: var(--bg-color);
+  text-align: center;
 }
 
 .portfolio {

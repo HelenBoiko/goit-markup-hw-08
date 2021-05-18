@@ -2,7 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  outline: 2px solid red;
+  //outline: 2px solid red;
 }
 
 h1,
@@ -23,6 +23,12 @@ ul {
   list-style: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -31,3 +37,4 @@ body {
   font-weight: 400;
   background-color: var(--bg-color);
 }
+
