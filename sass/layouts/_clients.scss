@@ -1,12 +1,13 @@
 .section-clients {
+  padding: 60px 0;
 
   @media screen and (min-widht: 480px) {
   
-    flex-basis: calc((100%-30px*2)/2);
+    flex-basis: calc((100% - 30px * 2) / 2);
     margin-right: 30px;
     
-    padding-top: 60px;
-    padding-bottom: 60px;
+    //padding-top: 60px;
+    //padding-bottom: 60px;
   }
 
 
@@ -15,10 +16,10 @@
   }
 
   @media screen and (min-widht: 1200px) {
-    flex-basis: calc((100%-30px*3)/4);
+    flex-basis: calc((100% - 30px * 3) / 4);
     display: flex;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    //padding-top: 94px;
+    //padding-bottom: 94px;
   }
   
   
@@ -36,7 +37,7 @@
   margin-right: 30px;
 
   @media screen and (min-width: 480px) {
-    flex-basis: calc((100%-2*30px)/2);
+    flex-basis: calc((100% - 2 * 30px) / 2);
     margin: 15px
     
   }
