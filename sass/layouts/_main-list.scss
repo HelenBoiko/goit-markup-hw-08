@@ -9,12 +9,16 @@
     flex-wrap: wrap;
 
   }
+   @media screen and (min-width: 1200px){
+     
+     flex-wrap: nowrap;
+   }
 
 }
 
 
 .main-list__item {
-  
+  margin-bottom: 30px;
   height: 120px;
   background-size: 70px;
   //background-repeat: no-repeat;
@@ -39,6 +43,10 @@
     
     
   }
+}
+
+.main-list__item:last-of-type{
+  margin-bottom: 0%;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
