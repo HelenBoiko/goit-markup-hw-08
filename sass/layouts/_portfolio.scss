@@ -45,11 +45,20 @@
 
 
 .card-portfolio {
-  display: flex;
-  flex-wrap: wrap;
+  
   padding-left: 0;
   margin: 0;
   list-style: none;
+
+  @media screen and (min-width: 480px){
+
+  }
+
+  @media screen and (min-width: 768px){
+  display: flex;
+  flex-wrap: wrap;
+  }
+
 }
 
 .item-portfolio {
@@ -63,6 +72,11 @@
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
    0px 4px 4px rgba(0, 0, 0, 0.06), 
    1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  @media screen and (min-width: 480px){
+    width: 450px;
+    
   }
 }
 
@@ -83,6 +97,12 @@
   &:focus .text-item-portfolio {
   transform: translateY(0);
   }
+}
+
+.item-portfolio__icon {
+   @media screen and (min-width: 480px){
+     width: 100%;
+   }
 }
 
 
@@ -136,4 +156,3 @@
   line-height: 1.87;
   color: var(--main-text-color);
 }
-

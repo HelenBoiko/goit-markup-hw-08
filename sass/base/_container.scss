@@ -11,7 +11,7 @@
 
  @media screen and  (min-width: 768px) {
    max-width: 768px;
-   margin: 0 auto;
+  
  }
 
  @media screen and (min-width: 1200px) {
@@ -35,11 +35,11 @@
 
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     //padding-top: 60px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-bottom: 50px;
+    margim-bottom: 50px;
   }
 
 }
