@@ -1,6 +1,17 @@
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (min-width: 480pxpx){
+    
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px){
+    
+  }
+  @media screen and (min-width: 1200px){
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
 }
 
 .portfolio-button {
@@ -47,7 +58,7 @@
 .card-portfolio {
   
   padding-left: 0;
-  margin: 0;
+  margin: 0 auto;
   list-style: none;
 
   @media screen and (min-width: 480px){
@@ -55,13 +66,14 @@
   }
 
   @media screen and (min-width: 768px){
+  max-width: 768px;
   display: flex;
   flex-wrap: wrap;
   flex-basis: calc((100% - 2 * 30px) / 2);
   
   }
   @media screen and (min-width: 1200px){
-
+  max-width: 1600px;
   flex-basis: calc((100% - 3 * 30px) / 3);
   }
 }
@@ -90,6 +102,13 @@
     margin-right: 30px;
     margin-bottom: 30px;
     
+    .item-portfolio:last-child {
+  margin-right: 0;
+  }
+
+  .item-portfolio:nth-child(3n) {
+  margin-right: 0;
+  }
   }
 
 
@@ -97,13 +116,9 @@
 
 }
 
-.item-portfolio:last-child {
-  //margin-right: 0;
-}
 
-.item-portfolio:nth-child(3n) {
-  //margin-right: 0;
-}
+
+
 
 .item-portfolio__icon {
   display: block;
