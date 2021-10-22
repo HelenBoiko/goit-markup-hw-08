@@ -8,8 +8,9 @@
     
   }
   @media screen and (min-width: 1200px){
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 0 15px;
+    //padding-top: 94px;
+    //padding-bottom: 94px;
   }
   
 }
@@ -155,7 +156,7 @@
   padding: 63px 24px;
   background: rgba(33, 150, 243, 0.9);
   
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms var(--animation)
 }
 
@@ -169,6 +170,7 @@
 }
 
 .menu-project {
+  flex-grow: 1;
   width: 100%;
   padding: 20px 24px;
 }
