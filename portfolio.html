@@ -72,7 +72,12 @@
 					<ul class="card-portfolio">
 						<li class="item-portfolio">
 							<a href="" class="item-portfolio__icon">					<div class="text-paragraf">	
-								<img class="text-paragraf__img" src="imeges/portfolio/img.a.jpg" alt="" width=""> 
+								<picture>
+										<source srcset="./imeges/portfolio/desktop/img-desktop01.jpg 1x, ./imeges/portfolio/desktop/img-desktop01@2x.jpg 2x" media="(min-width: 1200px)"/>
+										<source srcset="./imeges/portfolio/tablet/img-tablet01.jpg 1x, ./imeges/portfolio/tablet/img-tablet01@2x.jpg 2x" media="(min-width: 768px"/>
+										<source srcset="./imeges/portfolio/mobile/laptop450.jpg.jpg 1x, ./imeges/portfolio/mobile/laptop900.jpg 2x" media="(max-width: 480px)"/>
+									<img class="text-paragraf__img" src="imeges/portfolio/mobile/laptop450.jpg" alt="" width="100%"> 
+								</picture>
 								<div class="text-item-portfolio">
 									<p class="text-portfolio">
 										Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
