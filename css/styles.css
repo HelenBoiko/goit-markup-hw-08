@@ -15,6 +15,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  outline: 2px solid red;
 }
 
 h1,
@@ -1084,11 +1085,12 @@ button {
   flex-basis: calc(50% - 15px);
 }
 
-.addres-footer {
+.address-footer {
   width: 231px;
   display: block;
   display: inline-flex;
   flex-direction: column;
+  margin-bottom: 60px;
 }
 
 .address-footer__contact {
@@ -1096,7 +1098,6 @@ button {
   line-height: 1.71;
   font-style: normal;
   color: var(--bg-color);
-  margin-bottom: 60px;
 }
 
 .address-footer__nav {
