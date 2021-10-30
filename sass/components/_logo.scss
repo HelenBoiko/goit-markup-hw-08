@@ -6,6 +6,12 @@
   line-height: 1.19;
   text-decoration: none;
   color: var(--accent-link-color);
+  
+  @media screen and (max-width: 1198px) {
+    font-size: 24px;
+  }
+
+  
 }
 
 .list .logo  {
