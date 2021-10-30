@@ -11,17 +11,35 @@
 
 }
 
+.footer-form {
+  @media screen and (min-width: 480px) {
+  width: 450px;
+  height: 156px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+ 
+ @media screen and (min-width: 1200px) {
+   width: 570px;
+   height: 86px;
+ }
+}
+
 .mail-form {
+  
 
   @media screen and (min-widht: 1200px) {
 
   display: flex;
   width: 570px;
+  //height: 86px;
+
   }
 }
 
 .mail-form__email {
   width: 100%;
+  
   padding-left: 16px;
   margin-right: 12px;
   margin-bottom: 20px;
