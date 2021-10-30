@@ -392,6 +392,20 @@ button {
   color: var(--bg-color);
 }
 
+@media screen and (max-width: 768px) {
+  .mail-form__email {
+    width: 450px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mail-form__email {
+    width: 358px;
+    height: 50px;
+  }
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -1191,8 +1205,6 @@ button {
 }
 
 .portfolio-button {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
@@ -1202,9 +1214,28 @@ button {
   list-style: none;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-button {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .portfolio-button__item {
   display: flex;
   margin-right: 8px;
+}
+
+@media screen and (min-width: 450px) {
+  .portfolio-button__item {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-button__item {
+    margin-bottom: 0;
+  }
 }
 
 .portfolio-button__item:hover, .portfolio-button__item:focus {

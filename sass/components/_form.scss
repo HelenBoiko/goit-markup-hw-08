@@ -27,9 +27,9 @@
 
 .mail-form {
   
+ 
 
   @media screen and (min-widht: 1200px) {
-
   display: flex;
   width: 570px;
   //height: 86px;
@@ -50,4 +50,13 @@
   background: #2F303A;
   color: var(--bg-color);
 
+   @media screen and (max-width: 768px) {
+    width: 450px;
+    height: 50px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    height: 50px;
+  }
 }
