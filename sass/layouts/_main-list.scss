@@ -22,11 +22,11 @@
 
 .main-list__item {
   margin-bottom: 30px;
-  height: 120px;
+  //height: 120px;
   background-size: 70px;
   //background-repeat: no-repeat;
   //background-position: center;
-  background-color: #F5F4FA;
+  //background-color: #F5F4FA;
   //background-color: blue;
 
   @media screen and (min-width: 480px) {
@@ -72,8 +72,8 @@
 }
 
 .main-list__icon-antenna {
-  //width: 450px;
-  //height: 120px;
+  //width: 270px;
+  height: 120px;
   display: flex;
   justify-content: center;
   background-color: #F5F4FA;
@@ -88,7 +88,8 @@
 }
 
 .main-list__icon-clock {
-  //height: 120px;
+  //width: 270px;
+  height: 120px;
   display: flex;
   justify-content: center;
   background-color: #F5F4FA;
@@ -101,7 +102,8 @@
 }
 
 .main-list__icon-diagram {
-  //height: 120px;
+  //width: 270px;
+  height: 120px;
   display: flex;
   justify-content: center;
   background-color: #F5F4FA;
@@ -115,7 +117,7 @@
 }
 
 .main-list__icon-astronaut {
-  //height: 120px;
+  height: 120px;
   display: flex;
   justify-content: center;
   background-color: #F5F4FA;
