@@ -68,7 +68,7 @@
 
 
 .main-list__icon-antenna::before {
-  background-image: url(../imeges/antenna.svg); 
+  background-image: url(/imeges/svg.icons.svg#icon-antenna); 
 }
 
 .main-list__icon-antenna {
@@ -79,6 +79,11 @@
   background-color: #F5F4FA;
   align-items: center;
   margin-bottom: 30px;
+}
+
+.main-list__icon-svg {
+  width: 70px;
+  height: 70px;
 }
 
 
