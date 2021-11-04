@@ -825,7 +825,7 @@ button {
 }
 
 .main-list__icon-antenna::before {
-  background-image: url(/imeges/svg.icons.svg#icon-antenna);
+  background-image: url(../imeges/svg.icons.svg#icon-antenna);
 }
 
 .main-list__icon-antenna {
