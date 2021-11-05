@@ -8,8 +8,9 @@
 
 .footer-list {
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199.98px) {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
   }
@@ -19,12 +20,16 @@
 
 .footer-blok {
   flex-basis: calc((50% - 45px) / 2);
-  //margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .footer-blok:last-child {
   flex-basis: calc(50% - 15px);
 }
+
+
+
+
 
 .address-footer {
   
@@ -71,6 +76,7 @@
 .mail-form__button {
   display: flex;
   width: 200px;
+  height: 50px;
   text-align: center;
   letter-spacing: 0.06em;
 
@@ -86,6 +92,8 @@
   border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
+
+ 
 }
 
 .mail-form__button::after {
@@ -96,4 +104,6 @@
   background-image: url("../imeges/icon-send.svg");
   background-size: contain;
   background-repeat: no-repeat;
+
+  
 }

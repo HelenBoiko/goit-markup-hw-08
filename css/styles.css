@@ -344,7 +344,6 @@ button {
 }
 
 .footer-form__sign {
-  display: flex;
   flex-direction: column;
   font-size: 14px;
   line-height: 1.14;
@@ -353,6 +352,12 @@ button {
   text-align: center;
   margin-bottom: 20px;
   color: #FFFFFF;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__sign {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -370,7 +375,7 @@ button {
   }
 }
 
-@media screen and (min-widht: 1200px) {
+@media screen and (min-width: 1200px) {
   .mail-form {
     display: flex;
     width: 570px;
@@ -1128,9 +1133,10 @@ button {
   margin-right: auto;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199.98px) {
   .footer-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
   }
@@ -1138,6 +1144,7 @@ button {
 
 .footer-blok {
   flex-basis: calc((50% - 45px) / 2);
+  margin-bottom: 60px;
 }
 
 .footer-blok:last-child {
@@ -1190,6 +1197,7 @@ button {
 .mail-form__button {
   display: flex;
   width: 200px;
+  height: 50px;
   text-align: center;
   letter-spacing: 0.06em;
   padding-top: 10px;
