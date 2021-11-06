@@ -16,7 +16,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  outline: 2px solid red;
 }
 
 h1,
@@ -1140,7 +1139,7 @@ button {
 @media screen and (min-width: 768px) {
   .footer-in-tablet {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
     padding: 0 15px;
   }
@@ -1156,7 +1155,6 @@ button {
 }
 
 .footer-blok {
-  flex-basis: calc((50% - 45px) / 2);
   margin-bottom: 60px;
 }
 
@@ -1185,8 +1183,7 @@ button {
   .address-footer {
     display: inline-flex;
     flex-direction: column;
-    margin-left: 0;
-    margin-right: 0;
+    margin-right: 70px;
   }
 }
 
@@ -1257,12 +1254,12 @@ button {
 
 .welcom-list {
   margin-bottom: 60px;
-  width: 206px;
 }
 
 @media screen and (min-width: 1200px) {
   .welcom-list {
     display: block;
+    width: 206px;
   }
 }
 
