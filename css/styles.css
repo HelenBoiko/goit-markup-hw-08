@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --main-text-color: #757575;
   --title-color: #212121;
@@ -15,6 +16,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  outline: 2px solid red;
 }
 
 h1,
@@ -311,12 +313,14 @@ button {
   text-align: center;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imeges/Img (hero).jpg");
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   outline: 1px solid black;
   background-color: var(--bg-color-section);
   color: var(--bg-color);
 }
 
-@media screen and (min-widht: 480px) {
+@media screen and (min-width: 480px) {
   .section {
     max-width: 768px;
     height: 400px;
@@ -324,7 +328,7 @@ button {
   }
 }
 
-@media screen and (min-widht: 768px) {
+@media screen and (min-width: 768px) {
   .section {
     max-width: 1200px;
     height: 400px;
@@ -335,7 +339,7 @@ button {
   }
 }
 
-@media screen and (min-widht: 1200px) {
+@media screen and (min-widtр: 1200px) {
   .section {
     max-width: 1600px;
     margin-left: auto;
@@ -1133,6 +1137,15 @@ button {
   margin-right: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-in-tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 15px;
+  }
+}
+
 @media screen and (min-width: 1199.98px) {
   .footer-list {
     display: flex;
@@ -1147,6 +1160,12 @@ button {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-blok {
+    margin-bottom: 0;
+  }
+}
+
 .footer-blok:last-child {
   flex-basis: calc(50% - 15px);
 }
@@ -1157,7 +1176,6 @@ button {
 
 @media screen and (min-width: 480px) {
   .address-footer {
-    width: 231px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1239,12 +1257,12 @@ button {
 
 .welcom-list {
   margin-bottom: 60px;
+  width: 206px;
 }
 
-@media screen and (min-widht: 1200px) {
+@media screen and (min-width: 1200px) {
   .welcom-list {
     display: block;
-    width: 206px;
   }
 }
 
