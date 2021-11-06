@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --main-text-color: #757575;
   --title-color: #212121;
@@ -306,10 +305,13 @@ button {
 }
 
 .section {
+  max-width: 1600px;
   height: 600px;
   display: flex;
   align-items: center;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imeges/Img (hero).jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -335,14 +337,6 @@ button {
     padding-top: 118px;
     padding-bottom: 118px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imeges/Header img@2x.jpg");
-  }
-}
-
-@media screen and (min-widtр: 1200px) {
-  .section {
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -634,8 +628,9 @@ button {
   top: 100%;
   left: 0;
   width: 100%;
+  height: 796px;
+  background-color: blue;
   padding: 40px;
-  height: 200px;
 }
 
 .mobile-menu.is-open {
@@ -1181,6 +1176,7 @@ button {
 
 @media screen and (min-width: 1200px) {
   .address-footer {
+    width: 232px;
     display: inline-flex;
     flex-direction: column;
     margin-right: 70px;
