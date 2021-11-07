@@ -272,10 +272,15 @@ button {
 
 .list-nav {
   display: flex;
-  max-width: 100%;
   padding-left: 0;
   margin: 0;
   list-style: none;
+}
+
+@media screen and (max-width: 767px) {
+  .list-nav {
+    display: none;
+  }
 }
 
 .list-nav__item {
@@ -624,17 +629,21 @@ button {
 
 .mobile-menu {
   display: none;
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 796px;
   background-color: blue;
   padding: 40px;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: var(--animation);
 }
 
 .mobile-menu.is-open {
   display: block;
+  transform: translateX(0);
 }
 
 .contact-nav {
@@ -649,6 +658,12 @@ button {
 .contact-nav :hover,
 .contact-nav :focus {
   color: var(--accent-link-color);
+}
+
+@media screen and (max-width: 767px) {
+  .contact-nav {
+    display: none;
+  }
 }
 
 .contact-nav__item {

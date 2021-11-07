@@ -13,6 +13,12 @@
 
 }
 
+@media screen and (max-width: 767px) {
+  .contact-nav {
+    display: none;
+  }
+}
+
 .contact-nav__item {
   margin-left: 50px;
 }

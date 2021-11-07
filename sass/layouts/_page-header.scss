@@ -31,18 +31,20 @@
 .mobile-menu {
   display: none;
   
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 796px;
   background-color: blue;
   padding: 40px;
-  
-  
+  z-index: 999;
+
+  transform: translateX(100%);
+   transition: var(--animation);
 
   &.is-open {
     display: block;
-    
+    transform: translateX(0);
   }
 }
