@@ -1137,6 +1137,7 @@ button {
     justify-content: space-around;
     align-items: baseline;
     padding: 0 15px;
+    margin-bottom: 60px;
   }
 }
 
@@ -1157,14 +1158,6 @@ button {
   .footer-blok {
     margin-bottom: 0;
   }
-}
-
-.footer-blok:last-child {
-  flex-basis: calc(50% - 15px);
-}
-
-.address-footer {
-  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 480px) {
@@ -1246,10 +1239,6 @@ button {
   text-decoration-line: none;
   color: var(--main-text-color);
   transition: collor 250ms var(--animation);
-}
-
-.welcom-list {
-  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {

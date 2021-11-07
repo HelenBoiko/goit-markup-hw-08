@@ -17,7 +17,7 @@
     justify-content: space-around;
     align-items: baseline;
     padding: 0 15px;
-
+    margin-bottom: 60px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -47,7 +47,7 @@
 }
 
 .footer-blok:last-child {
-  flex-basis: calc(50% - 15px);
+  //flex-basis: calc(50% - 15px);
 }
 
 
@@ -57,7 +57,7 @@
 .address-footer {
   
   //display: block;
-  margin-bottom: 60px;
+  //margin-bottom: 60px;
 
   @media screen and(min-width: 480px) {
     //width: 232px;
