@@ -11,13 +11,12 @@
    color: var(--accent-link-color);
   }
 
-}
-
-@media screen and (max-width: 767px) {
-  .contact-nav {
-    display: none;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+    margin-left: 80px;
   }
 }
+
 
 .contact-nav__item {
   margin-left: 50px;

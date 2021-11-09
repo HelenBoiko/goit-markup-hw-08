@@ -692,9 +692,10 @@ button {
   color: var(--accent-link-color);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact-nav {
-    display: none;
+    display: block;
+    margin-left: 80px;
   }
 }
 
