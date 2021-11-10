@@ -1,4 +1,5 @@
-.contact-nav
+.contact-nav,
+.mobile-contact-nav
  {
   display: flex;
   margin-left: auto;
@@ -19,9 +20,9 @@
 
 .mobile-contact {
   padding-top: 38px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 767px) {
