@@ -4,7 +4,8 @@
 }
 
 
-.list-nav__link {
+.list-nav__link,
+.mobile-nav__link {
   display: block;
   position: relative;
   padding-top: 32px;
@@ -25,7 +26,8 @@
 }
 
 
-.list-nav {
+.list-nav,
+.mobile-nav {
   display: flex;
   max-width: 100%;
   padding-left: 0;
@@ -39,7 +41,8 @@
   }
 }
 
-.list-nav__item {
+.list-nav__item,
+.mobile-nav__item {
   margin-left: 50px;
 }
 
@@ -50,7 +53,8 @@
   padding-bottom: 32px;
 }
 
-.list-nav__current {
+.list-nav__current,
+.mobile-nav_current {
   color: var(--accent-link-color);
 
   &::after {

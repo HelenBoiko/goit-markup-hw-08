@@ -1,7 +1,7 @@
 .page-header {
   position: relative;
-    align-items: center;
-    justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   border-bottom: 1px solid #EEEEEE ;
 }
 
@@ -14,7 +14,7 @@
   margin: 0;
   padding: 0;
   border: none;
-  background-color: transparent;
+  //background-color: transparent;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -36,32 +36,31 @@
 
 
 .mobile-menu {
-  
-  
- 
- 
+  position: fixed;
+  top: 10px;
+  left: 15px;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
   background-color: beige;
-  text-align: center;
+  //background-color: #fff;
+  //box-shadow: 0px 4px 8px rgb(0 0 0 / 4%), 0px 2px 4px rgb(0 0 0 / 8%), 0px 1px 3px rgb(0 0 0 / 16%);
+  text-align: start;
+  justify-content: space-between;
   overflow-y: scroll;
   z-index: 999;
 
   transform: translateX(100%);
-   transition: var(--animation);
+  transition: var(--animation);
 
   &.is-open {
     display: block;
     transform: translateX(0);
   }
 
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px) {
   display: none;
   position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  //padding: 40px;
-
   }
 
   @media screen and (min-width: 768px) {
@@ -70,7 +69,7 @@
   }
 }
 
-.mobile-listu .mobil-contactv {
+.mobile-list .mobile-contact {
   @media screen and (max-width: 767px) {
     display: block;
   }
