@@ -4,8 +4,7 @@
 }
 
 
-.list-nav__link,
-.mobile-nav__link {
+.list-nav__link {
   display: block;
   position: relative;
   padding-top: 32px;
@@ -26,23 +25,22 @@
 }
 
 
-.list-nav,
-.mobile-nav {
+.list-nav {
   display: flex;
-  max-width: 100%;
+  //max-width: 100%;
   padding-left: 0;
   margin: 0;
   list-style: none;
-}
 
-@media screen and (max-width: 767px) {
-  .list-nav {
+  @media screen and (max-width: 767px) {
     display: none;
   }
+
 }
 
-.list-nav__item,
-.mobile-nav__item {
+
+
+.list-nav__item {
   margin-left: 50px;
 }
 
@@ -53,8 +51,7 @@
   padding-bottom: 32px;
 }
 
-.list-nav__current,
-.mobile-nav_current {
+.list-nav__current {
   color: var(--accent-link-color);
 
   &::after {
