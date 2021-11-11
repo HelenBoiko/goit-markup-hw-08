@@ -31,16 +31,24 @@
   margin: 0;
   list-style: none;
 
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-
 }
 
+@media screen and (max-width: 767px) {
+  .list-nav {
+    display: none;
+  }
+  }
 
 
 .list-nav__item {
   margin-left: 50px;
+}
+
+@media screen and (min-width: 767px) {
+  .list-nav__item:first-child {
+    margin-left: 0;
+
+  }
 }
 
 

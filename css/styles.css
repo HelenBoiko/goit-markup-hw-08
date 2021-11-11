@@ -15,6 +15,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  outline: 2px solid red;
 }
 
 h1,
@@ -286,6 +287,12 @@ button {
 
 .list-nav__item {
   margin-left: 50px;
+}
+
+@media screen and (min-width: 767px) {
+  .list-nav__item:first-child {
+    margin-left: 0;
+  }
 }
 
 .list-nav__link {
@@ -627,6 +634,12 @@ button {
   color: var(--accent-link-color);
 }
 
+@media screen and (min-width: 480px) {
+  .contact-nav {
+    margin-left: 0;
+  }
+}
+
 .mobile-contact-nav {
   display: flex;
 }
@@ -646,7 +659,6 @@ button {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact-nav {
     display: block;
-    margin-left: 80px;
   }
 }
 
@@ -1067,7 +1079,7 @@ button {
 }
 
 .command__link {
-  width: 100%;
+  width: 450px;
   margin: 0 15px 30px 15px;
   border-radius: 4px;
   box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
@@ -1379,6 +1391,13 @@ button {
   list-style: none;
 }
 
+@media screen and (min-width: 480px) {
+  .card-portfolio {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .card-portfolio {
     width: 768px;
@@ -1390,6 +1409,7 @@ button {
 @media screen and (min-width: 1200px) {
   .card-portfolio {
     width: 1200px;
+    margin: 0 -15px;
   }
 }
 
@@ -1536,7 +1556,7 @@ button {
   width: 100%;
   height: 100vh;
   padding: 48px 40px;
-  background-color: aqua;
+  background-color: #fff;
   text-align: start;
   justify-content: space-between;
   overflow-y: scroll;
@@ -1552,6 +1572,7 @@ button {
 .mobile-menu.is-open {
   display: block;
   transform: translateX(0);
+  justify-content: space-evenly;
 }
 
 @media screen and (max-width: 767px) {
@@ -1621,7 +1642,6 @@ button {
   display: flex;
   flex-wrap: wrap;
   margin-top: -32px;
-  margin-left: -10px;
 }
 
 .mobile-menu__social-item {
