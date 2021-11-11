@@ -15,7 +15,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  outline: 2px solid red;
 }
 
 h1,
@@ -1616,6 +1615,7 @@ button {
 .mobile-contact {
   padding-top: 38px;
   flex-direction: column;
+  margin-top: 306px;
 }
 
 .mobile-contact-nav__telephon {
