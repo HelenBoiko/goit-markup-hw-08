@@ -18,7 +18,7 @@
 .portfolio-button {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
   margin-left: auto;
   margin-right: auto;
 	margin-bottom: 50px;
@@ -27,10 +27,10 @@
   
   list-style: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 480px) {
     //display: flex;
     margin-bottom: 35px;
-    justify-content: start;
+    justify-content: center;
 
     //flex-wrap: wrap;
   }
