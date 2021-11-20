@@ -75,7 +75,7 @@
     margin-top: 32px;
 }
 
-.mobile-nav__item
+.mobile-nav__item 
 .mobile-nav__current {
     color: var(--accent-link-color);
 
@@ -99,7 +99,13 @@
     font-size: 40px;
     line-height: 1.175;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--title-color);
+  transition: color 250ms var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-link-color);
+  }
 }
 
 .mobile-contact {

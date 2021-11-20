@@ -1609,7 +1609,12 @@ button {
   font-size: 40px;
   line-height: 1.175;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--title-color);
+  transition: color 250ms var(--animation);
+}
+
+.mobile-nav__link:hover, .mobile-nav__link:focus {
+  color: var(--accent-link-color);
 }
 
 .mobile-contact {
