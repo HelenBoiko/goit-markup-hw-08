@@ -50,7 +50,13 @@
   background: #2F303A;
   color: var(--bg-color);
 
-   @media screen and (max-width: 768px) {
+  @media screen and (max-width: 479px) {
+    width: 100vw;
+    margin: auto;
+
+  }
+
+   @media screen and (min-width: 480px) {
     width: 450px;
     height: 50px;
   }

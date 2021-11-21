@@ -397,7 +397,14 @@ button {
   color: var(--bg-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 479px) {
+  .mail-form__email {
+    width: 100vw;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 480px) {
   .mail-form__email {
     width: 450px;
     height: 50px;
@@ -1403,7 +1410,7 @@ button {
 }
 
 .item-portfolio {
-  width: 100%;
+  width: 100vw;
   border: 1px solid #eee;
 }
 
